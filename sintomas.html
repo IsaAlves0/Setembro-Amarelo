@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setembro Amarelo</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<style>
+    body{
+	background-color:#EEE;
+	background-image:url(img/fundo.png);
+	background-repeat:repeat-x; 
+	margin:0 0 20px 0;
+	font-family:"trebuchet ms",verdana;
+	color:#333333;
+	line-height: 1.5;
+
+}
+
+img{
+	border:none;
+}
+
+#topo{
+	width:900px;
+	height:100px;
+	margin:auto;
+
+}
+
+#logo{
+	width: 900px;
+	height:63px;
+	float:left;
+	margin-top:1px;
+	padding-top: 30px;
+
+}
+
+#logo img{
+	padding-left: 220px;
+	
+}
+
+#menu{
+	float:left;
+	margin-top:82px;
+	align-items: center;
+	
+}
+
+#menu a{
+	color:#FFFFFF;
+	font-weight:bold;
+	font-family:verdana;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+
+}
+
+#menu a:hover{
+	color:#cfd150;
+	background-color:#FFFFFF;
+}
+
+#container{
+	width:880px;
+	height:auto;
+	display: table;
+	margin:auto;
+	background-color:#FFFFFF;
+	padding:10px;
+	padding-bottom: 50px;
+	position: relative;
+	
+}
+
+
+#banner{
+	width: 880px;
+	height:280px;
+	/*background-color:#666666;*/
+	float:left;
+	padding-bottom: 40px;
+	
+}
+
+#conteudo{
+	width:880px;
+	min-height:50px;
+	/*background-color:#CCCCCC;*/
+	float:left;
+	margin:30px 0 30px 0; /*TOP RIGHT BOTTOM LEFT*/
+
+}
+
+.conteudo2{
+    padding-left:30px;
+    padding-right: 30px;
+    align-items: justify;
+    text-align:justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color:#eedb2d;
+}
+
+.cabecalho{
+	font-size: 30px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding-left: 10px;
+}
+
+.cbc{
+	font-size: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding-left: 10px;
+}
+
+.marquee{
+	font-size: 18px;
+	color: rgb(12, 12, 12);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	align-items: center;
+	font-weight: bold;
+	
+}
+
+
+h1,h2,h3{
+	margin:0;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+	font-size:18px;
+}
+
+#banner p {
+	display: inline-block;
+	top: 90px;
+	right: 155px;
+	font-size: 50px;
+	position: absolute;
+	align-items: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.img{
+    width: 700px;
+    height: 1600px;
+    padding-left: 90px;
+}
+
+*footer{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+    padding-bottom: 50px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #eead2d;
+	padding: 0 15px;
+}
+
+.footer-col{
+	width: 20%;
+	padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+	padding-top: 20px;;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #111111;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{ 
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #575454;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px){
+	.footer-col{
+		width: 100%;
+	}
+}
+</style>
+
+<body>
+	
+    <div id="topo">
+    	
+        <div id="logo">
+        	<a href="index.html"><img src="/img/logo1.png.png" alt=""></a>
+            <p class="marquee"><marquee behavior="alternate" direction="left"> Uma conversa, um abraço ou um simples "estou aqui", pode salvar muitas vidas!</p>
+            </marquee>
+        </div>
+
+        <div id="menu">
+        	<a href="home.html">HOME</a>
+            <a href="oquee.html">O QUE É?</a>
+            <a href="sintomas.html">SINAIS</a>
+            <a href="comoajudar.html">COMO AJUDAR?</a>
+            <a href="precisadeajuda.html">PRECISA DE AJUDA?</a>  
+        </div>
+    
+    </div>
+    
+    <div id="container">
+    	
+        <div id="banner">
+        	<img src="img/banner1.png" style: width="880px;" height="320px;"/>
+            <p class="banner"> Os Sinais</p>
+        </div>
+        
+        <div id="conteudo">
+            <div class="conteudo2">
+                <h1>Sinais de Comportamentos suicidas</h1>  
+                <p>O comportamento suicida pode surgir como consequência de diversos fatores, desde transtornos psicológicos, como depressão, esquizofrenia ou transtornos de personalidade, 
+                    até comportamentos e situações socioeconômicas, como sofrer descriminação, ter sofrido uma perda muito forte ou fazer consumo de drogas, por exemplo.
+                </p>   
+                <p>
+                    No entanto, este tipo de comportamento pode ser evitado, especialmente quando os familiares ou amigos conseguem identificá-lo a tempo, ajudando a pessoa a procurar ajuda profissional e iniciar o tratamento adequado.
+                </p>
+                <br>
+                <img src="https://pbs.twimg.com/media/EDfsGpAWwAAjHF-.jpg" style="width: 810px; height: 400px;">
+                <br><br><br>
+                <h1>Principais sinais de comportamento suicida</h1>
+                <p>Os principais sinais que indicam um possível comportamento suicida são:</p>
+
+                <h3>1. Fazer ameaças de suicídio</h3>
+                <p>
+                    A maior parte das pessoas que estão pensando em suicídio irão informar um amigo ou familiar das suas intenções. Embora esse comportamento, muitas vezes, seja visto como uma forma de chamar a atenção, nunca deve ser ignorado, 
+                    especialmente se a pessoa está vivendo uma fase de depressão ou de grandes alterações na sua vida.
+                </p>
+
+                <h3>2. Mostrar tristeza excessiva e isolamento</h3>
+                <p>Estar frequentemente triste e sem vontade para participar em atividades com os amigos ou fazer o que se fazia antigamente são alguns sintomas de depressão, que, quando não tratada, é uma das principais causas do suicídio.
+                </p>
+                <p>
+                    Normalmente, a pessoa não consegue identificar que está com depressão e acha apenas que não está sendo capaz de lidar com as outras pessoas ou com o trabalho, o que, ao longo do tempo, acaba deixando a pessoa desanimada e sem vontade para viver.
+                </p>
+
+                <h3>3. Mudança nos hábitos de sono e alimentação</h3>
+                <p>
+                    Algumas mudanças repentinas no comportamento como alterações do sono e do apetite, além de mostrar um comportamento tranquilo e despreocupado após um grande período de tristeza, depressão ou ansiedade, pode ser um sinal de que a pessoa tem pensamentos suicidas, porém isso não é uma regra.
+                </p>
+                <p>
+                    Muitas vezes, esses períodos de calma podem ser interpretados pelos familiares como uma fase de recuperação da depressão, podendo ser difícil de identificar, devendo ser sempre avaliados por um psicólogo para confirmar que não existem ideias suicidas.
+                </p>
+
+                <h3>4. Perda de interesse em atividades prazerosas</h3>
+                <p>É comum que a pessoa com comportamento suicida perde a vontade e o interesse por atividades que antes traziam prazer, como dançar, sair com amigos, ler ou escutar música, por exemplo. Isso porque a situação emocional em que se encontra impede a pessoa de sair do pensamento contínuo de acabar com a sua vida, focando sua atenção nesse objetivo, 
+                    deixando em segundo plano outras atividades do dia a dia, como ir ao cinema, fazer comprar, entre outros.
+                </p>
+
+                <h3>5. Isolamento social</h3>
+                <p>
+                    As crises emocionais que acontecem na pessoa com pensamentos suicidas fazem com que aconteça um afastamentos de seus círculos sociais, como amigos, família, trabalho ou escola, por exemplo, o que aumenta os pensamentos de querer por fim à vida.
+                </p>
+                <p>
+                    Por isso, é importante que diante da ausência de um amigo ou familiar de eventos sociais, além de mudanças no estilo de vida, como descuido repentino com a aparência e, até mesmo, verbalização do desejo de morrer, é importante que a ajuda seja procurada.
+                </p>
+
+                <h3>6. Uso e abuso de álcool e drogas</h3>
+                <p>
+                    O comportamento suicida frequentemente é acompanhado por transtornos psicológicos como depressão e transtornos da personalidade, os quais podem fazer com que a pessoa consuma álcool ou drogas de abuso com o objetivo de fugir da situação em que se encontra, 
+                    aumentando a gravidade dos sintomas depressivos e favorecendo o comportamento suicida.
+                </p>
+
+                <h3>7. Alterar o comportamento ou descuido pessoal</h3>
+                <p>
+                    Uma pessoa com ideias suicidas pode comportar-se de forma diferente do habitual, falando de outra forma, deixando de conseguir entender o humor de uma conversa ou, até, participando em atividades de risco, como utilizar drogas, ter contato íntimo desprotegido ou dirigir a grande velocidade.
+                </p>
+                <p>
+                    Além disso, como na maioria das vezes já não existe interesse pela vida, é comum que se deixe de dar atenção para a forma como se veste ou se cuida, utilizando roupa velha, suja ou deixando crescer o cabelo e a barba.
+                </p>
+
+                <h3>8. Tratar de assuntos pendentes</h3>
+                <p>
+                    Quando alguém está pensando cometer suicídio é comum começar a fazer várias tarefas para tentar organizar sua vida e terminar assuntos pendentes, como faria se fosse viajar por muito tempo ou viver para outro país. Alguns exemplos são visitar familiares que já não vê há muito tempo, pagar pequenas dívidas ou oferecer vários objetos pessoais, por exemplo.
+                </p>
+                <p>
+                    Em muitos casos, também é possível que a pessoa gaste muito tempo escrevendo, o que pode ser um testamento ou até uma carta de despedida. Por vezes, estas cartas podem ser descobertas antes da tentativa de suicídio, ajudando a evitar que aconteça.
+                </p>
+            </div>
+            <br><br><br>
+            <img class="img" src="https://static.ndmais.com.br/2018/09/cropped/70f75b12544ee495fdb666dfac21f4223b661d08.jpg">
+        </div>
+    </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+</body>
+</html>
